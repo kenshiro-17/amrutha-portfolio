@@ -42,6 +42,7 @@ export const profile = {
   name: "Amrutha Sreeraj",
   initials: "AS",
   role: "Applied AI Professional",
+  portrait: "/amrutha-sreeraj-portrait.png",
   headline: "Applied AI professional building computer vision and ML pipeline systems.",
   location: "Stuttgart, Germany",
   availability: "Computer vision and ML engineer based in Germany",

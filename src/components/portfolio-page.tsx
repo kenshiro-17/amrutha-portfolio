@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   ArrowUpRight,
   Briefcase,
@@ -148,6 +149,17 @@ function Hero() {
           transition={{ duration: 0.7, delay: 0.12, ease: "easeOut" }}
           className="glass-panel premium-card relative overflow-hidden rounded-3xl p-5"
         >
+          <div className="relative mb-5 aspect-[16/10] overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--panel-strong)] shadow-2xl shadow-black/20">
+            <Image
+              src={profile.portrait}
+              alt={`${profile.name} portrait`}
+              fill
+              priority
+              sizes="(min-width: 1024px) 42vw, 90vw"
+              className="object-cover object-[58%_42%]"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_58%,rgba(0,0,0,0.24))]" />
+          </div>
           <div className="mb-5 flex items-start justify-between gap-4">
             <div>
               <p className="text-sm uppercase tracking-[0.22em] text-[var(--text-muted)]">
